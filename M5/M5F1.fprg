@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="M5F1"/>
+        <attribute name="authors" value="Harper"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-21 01:05:30 PM"/>
+        <attribute name="created" value="SGFycGVyO1kyMDNEVzExOzIwMjUtMDktMTY7MDE6NTc6NTcgUE07MjM5NQ=="/>
+        <attribute name="edited" value="SGFycGVyO1kyMDNEVzExOzIwMjUtMDktMTY7MDI6MjI6MDIgUE07MTsyNDg2"/>
+        <attribute name="edited" value="d2Vlenk7QkxVUkI7MjAyNS0wOS0yMTswMTowNTozMCBQTTsxOzIzMjE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="quantity, uprice, extprice, tax, total" type="Integer" array="False" size=""/>
+            <output expression="&quot;Welcome to the Quantity Pricing calculator! Please enter quantity of the item(s)&quot;" newline="True"/>
+            <input variable="quantity"/>
+            <if expression="quantity &gt;= 1000">
+                <then>
+                    <assign variable="uprice" expression="3.00"/>
+                </then>
+                <else>
+                    <assign variable="uprice" expression="5.00"/>
+                </else>
+            </if>
+            <assign variable="extprice" expression="quantity * uprice"/>
+            <assign variable="tax" expression="extprice * 0.07"/>
+            <assign variable="total" expression="extprice + tax"/>
+            <output expression="&quot;Your quantity is &quot;&amp; quantity &amp;&quot;,  your unit price is $&quot; &amp; uprice &amp;&quot;, your extended price is $&quot; &amp; extprice &amp;&quot;, your tax is $&quot; &amp; tax &amp;&quot;, and finally, your total is $&quot; &amp; total" newline="True"/>
+            <output expression="&quot;Thank you for using the calculator!&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

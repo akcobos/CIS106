@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="a_cobos"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-18 03:49:43 PM"/>
+        <attribute name="created" value="YV9jb2JvcztZMjAzVzMwOzIwMjUtMDktMTg7MDM6MDI6MTggUE07MjQzNQ=="/>
+        <attribute name="edited" value="YV9jb2JvcztZMjAzVzMwOzIwMjUtMDktMTg7MDM6NDk6NDMgUE07MjsyNTUz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="appliance" type="String" array="False" size=""/>
+            <declare name="cost, warranty, total" type="Real" array="False" size=""/>
+            <output expression="&quot;Greetings! Thank you for using my appliance warranty calculator! Enter the name of the appliance you'd wish to calculate!&quot;" newline="True"/>
+            <input variable="appliance"/>
+            <output expression="&quot;Now enter the cost of the appliance&quot;" newline="True"/>
+            <input variable="cost"/>
+            <if expression="cost &gt; 1000">
+                <then>
+                    <assign variable="warranty" expression="cost * 0.10"/>
+                </then>
+                <else>
+                    <assign variable="warranty" expression="cost * 0.05"/>
+                </else>
+            </if>
+            <assign variable="total" expression="cost + warranty"/>
+            <output expression="&quot;Your appliance is &quot;&amp;appliance &amp;&quot;, the cost of the appliance is $&quot; &amp;cost &amp;&quot;, your total warranty cost is $&quot; &amp;warranty &amp;&quot;, and finally your overall total is $&quot; &amp;total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

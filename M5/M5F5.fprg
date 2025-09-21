@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="a_cobos"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-18 04:10:30 PM"/>
+        <attribute name="created" value="YV9jb2JvcztZMjAzVzMwOzIwMjUtMDktMTg7MDM6NTA6MDkgUE07MjQzOA=="/>
+        <attribute name="edited" value="YV9jb2JvcztZMjAzVzMwOzIwMjUtMDktMTg7MDQ6MTA6MzAgUE07MjsyNTM4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="name" type="String" array="False" size=""/>
+            <declare name="dependents" type="Integer" array="False" size=""/>
+            <declare name="gincome, agincome, taxrate, incometax" type="Real" array="False" size=""/>
+            <output expression="&quot;Dear user, thank you for using my Gross Income Tax Rate Calculator. Please enter your last name below!&quot;" newline="True"/>
+            <input variable="name"/>
+            <output expression="&quot;Welcome &quot; &amp;name &amp;&quot;, now please enter your number of dependents&quot;" newline="True"/>
+            <input variable="dependents"/>
+            <output expression="&quot;Enter your gross income&quot;" newline="True"/>
+            <input variable="gincome"/>
+            <assign variable="agincome" expression="gincome - dependents *12000"/>
+            <if expression="agincome &gt; 50000">
+                <then>
+                    <assign variable="taxrate" expression="0.20"/>
+                </then>
+                <else>
+                    <assign variable="taxrate" expression="0.10"/>
+                </else>
+            </if>
+            <assign variable="incometax" expression="agincome * taxrate"/>
+            <if expression="incometax &lt;0">
+                <then>
+                    <assign variable="incometax" expression="100"/>
+                </then>
+                <else/>
+            </if>
+            <output expression="&quot;Dear &quot;&amp;name &amp;&quot;, your gross income is $&quot; &amp;gincome &amp;&quot;, your number of dependents is &quot; &amp;dependents &amp;&quot;, your adjusted gross income is $&quot; &amp;agincome &amp;&quot;, and your income tax is $&quot; &amp;incometax &amp;&quot;. Thank you for using my service! Have a pleasant day!&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

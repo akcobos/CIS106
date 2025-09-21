@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="M5F3"/>
+        <attribute name="authors" value="Harper"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-21 01:41:14 PM"/>
+        <attribute name="created" value="SGFycGVyO1kyMDNEVzExOzIwMjUtMDktMTg7MDE6MjI6MjggUE07MjM4Nw=="/>
+        <attribute name="edited" value="SGFycGVyO1kyMDNEVzExOzIwMjUtMDktMTg7MDI6Mzc6MjcgUE07MTsyNTAx"/>
+        <attribute name="edited" value="YV9jb2JvcztZMjAzVzMwOzIwMjUtMDktMTg7MDM6MDA6MzAgUE07MTsyNTM1"/>
+        <attribute name="edited" value="d2Vlenk7QkxVUkI7MjAyNS0wOS0yMTswMTo0MToxNCBQTTsxOzIzMjM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="books" type="Integer" array="False" size=""/>
+            <declare name="cost, total, shipping" type="Real" array="False" size=""/>
+            <output expression="&quot;Dear user, thank you for using my cost per book calculator! Enter the number of books you will order&quot;" newline="True"/>
+            <input variable="books"/>
+            <output expression="&quot;Now enter the cost per book&quot;" newline="True"/>
+            <input variable="cost"/>
+            <assign variable="cost" expression="cost * books"/>
+            <if expression="cost &gt;50">
+                <then>
+                    <assign variable="shipping" expression="0"/>
+                    <output expression="&quot;You get free shipping!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="shipping" expression="25"/>
+                    <output expression="&quot;A $25 shipping charge will be added to your order&quot;" newline="True"/>
+                </else>
+            </if>
+            <assign variable="total" expression="cost + shipping"/>
+            <output expression="&quot;Dear user, your order total is $&quot; &amp; total &amp; &quot; and your shipping total is $&quot; &amp; shipping &amp; &quot;. Thank you for the Cost Per Book Calculator! Enjoy!&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
