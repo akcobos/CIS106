@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="M6F3"/>
+        <attribute name="authors" value="weezy"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-28 03:54:54 PM"/>
+        <attribute name="created" value="d2Vlenk7QkxVUkI7MjAyNS0wOS0yODswMzo0MDowOSBQTTsyMjI3"/>
+        <attribute name="edited" value="d2Vlenk7QkxVUkI7MjAyNS0wOS0yODswMzo1NDo1NCBQTTsxOzIzNDA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="years" type="Integer" array="False" size=""/>
+            <declare name="principal, rate, interest" type="Real" array="False" size=""/>
+            <output expression="&quot;Dear user, please enter principal amount&quot;" newline="True"/>
+            <input variable="principal"/>
+            <output expression="&quot;Now enter years to maturity&quot;" newline="True"/>
+            <input variable="years"/>
+            <if expression="principal &gt; 100000 and years = 5">
+                <then>
+                    <assign variable="rate" expression="0.06"/>
+                </then>
+                <else>
+                    <if expression="principal &gt;= 50000 and principal &lt;=100000 and years = 10">
+                        <then>
+                            <assign variable="rate" expression="0.05"/>
+                        </then>
+                        <else>
+                            <if expression="principal &gt;= 50000 and principal &lt;= 100000 and years = 5">
+                                <then>
+                                    <assign variable="rate" expression="0.04"/>
+                                </then>
+                                <else>
+                                    <assign variable="rate" expression="0.02"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <assign variable="interest" expression="principal * rate"/>
+            <output expression="&quot;Dear user, your principal is $&quot; &amp;principal &amp;&quot;, and your interest rate is &quot;&amp;rate &amp;&quot;%, and your interest amount for the first year is $&quot; &amp;interest" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

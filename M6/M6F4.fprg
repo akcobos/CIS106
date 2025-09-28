@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="M6F4"/>
+        <attribute name="authors" value="weezy"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-28 04:13:52 PM"/>
+        <attribute name="created" value="d2Vlenk7QkxVUkI7MjAyNS0wOS0yODswNDowODoyMSBQTTsyMjI2"/>
+        <attribute name="edited" value="d2Vlenk7QkxVUkI7MjAyNS0wOS0yODswNDoxMzo1MiBQTTsxOzIzMzQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="tickets" type="Integer" array="False" size=""/>
+            <declare name="price, total" type="Real" array="False" size=""/>
+            <output expression="&quot;Dear user, enter the number of concert tickets&quot;" newline="True"/>
+            <input variable="tickets"/>
+            <if expression="tickets &gt;= 25">
+                <then>
+                    <assign variable="price" expression="50.00"/>
+                </then>
+                <else>
+                    <if expression="tickets &gt;= 10">
+                        <then>
+                            <assign variable="price" expression="60.00"/>
+                        </then>
+                        <else>
+                            <if expression="tickets &gt;= 5">
+                                <then>
+                                    <assign variable="price" expression="70.00"/>
+                                </then>
+                                <else>
+                                    <assign variable="price" expression="75.00"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <assign variable="total" expression="tickets * price"/>
+            <output expression="&quot;Dear user, your number of tickets is &quot; &amp;tickets &amp;&quot;, your price per ticket is $&quot; &amp;price &amp;&quot;, and your total cost is $&quot; &amp;total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
