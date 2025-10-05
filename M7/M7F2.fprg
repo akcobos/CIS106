@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="M7F2"/>
+        <attribute name="authors" value="weezy"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-05 01:08:21 PM"/>
+        <attribute name="created" value="d2Vlenk7QkxVUkI7MjAyNS0xMC0wNTsxMjo1NjoxOCBQTTsyMjIx"/>
+        <attribute name="edited" value="d2Vlenk7QkxVUkI7MjAyNS0xMC0wNTswMTowODoyMSBQTTsxOzIzMTg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="start, stop, increment, current" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter start value&quot;" newline="True"/>
+            <input variable="start"/>
+            <output expression="&quot;Enter stop value&quot;" newline="True"/>
+            <input variable="stop"/>
+            <output expression="&quot;Enter increment value&quot;" newline="True"/>
+            <input variable="increment"/>
+            <assign variable="current" expression="start"/>
+            <while expression="current &lt;= stop">
+                <output expression="current" newline="True"/>
+                <assign variable="current" expression="current + increment"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

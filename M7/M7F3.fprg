@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="M7F3"/>
+        <attribute name="authors" value="weezy"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-05 01:38:06 PM"/>
+        <attribute name="created" value="d2Vlenk7QkxVUkI7MjAyNS0xMC0wNTswMToxMDo0OSBQTTsyMjEz"/>
+        <attribute name="edited" value="d2Vlenk7QkxVUkI7MjAyNS0xMC0wNTswMTozODowNiBQTTsxOzIzMjQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="answer, name" type="String" array="False" size=""/>
+            <declare name="score1, score2, average" type="Real" array="False" size=""/>
+            <declare name="count" type="Integer" array="False" size=""/>
+            <assign variable="count" expression="0"/>
+            <output expression="&quot;Do you want to run the program? (yes to continue):&quot;" newline="True"/>
+            <input variable="answer"/>
+            <while expression="answer == &quot;yes&quot; or answer == &quot;Yes&quot;">
+                <output expression="&quot;Enter last name:&quot;" newline="True"/>
+                <input variable="name"/>
+                <output expression="&quot;Enter first exam score:&quot;" newline="True"/>
+                <input variable="score1"/>
+                <output expression="&quot;Enter second exam score&quot;" newline="True"/>
+                <input variable="score2"/>
+                <assign variable="average" expression="(score1 + score2)/2"/>
+                <output expression="&quot;Student &quot;&amp;name &amp;&quot;, your average score is &quot;&amp;average" newline="True"/>
+                <assign variable="count" expression="count + 1"/>
+                <output expression="&quot;Do you want to run the program again? (yes to continue):&quot;" newline="True"/>
+                <input variable="answer"/>
+            </while>
+            <output expression="&quot;Total students entered: &quot; &amp;count" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
