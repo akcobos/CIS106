@@ -1,0 +1,15 @@
+Notebook
+5
+3.50
+Pen
+10
+1.25
+Stapler
+2
+12.00
+Tape
+4
+2.75
+Folder
+6
+1.80

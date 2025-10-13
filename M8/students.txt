@@ -1,0 +1,15 @@
+Lopez
+I
+15
+Nguyen
+O
+12
+Patel
+I
+9
+Garcia
+O
+18
+Kim
+I
+6
