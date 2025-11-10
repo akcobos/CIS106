@@ -1,0 +1,10 @@
+Goldberg,88.5
+Bryant,92.0
+Castro,76.5
+D'Amelio,85.0
+Eckhart,90.5
+Kim,79.0
+Gonzalez,94.5
+Frye,81.0
+Reitsma,87.5
+Nguyen,89.0
