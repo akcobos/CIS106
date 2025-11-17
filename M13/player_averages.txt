@@ -1,0 +1,10 @@
+Goldberg,0.311
+Bryant,0.298
+Castro,0.285
+D'Amelio,0.290
+Eckhart,0.325
+Kim,0.307
+Gonzalez,0.278
+Frye,0.265
+Reitsma,0.301
+Nguyen,0.295
