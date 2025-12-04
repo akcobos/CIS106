@@ -1,0 +1,61 @@
+
+Train Ticket Estimate
+----------------------------------------
+Passenger:                     Cobos
+Miles from downtown:                 33.0
+Ticket price:                  $     12.00
+----------------------------------------
+
+Summary of All Tickets
+----------------------------------------
+Total tickets sold:                     1
+Total ticket revenue:          $     12.00
+----------------------------------------
+
+Train Ticket Estimate
+----------------------------------------
+Passenger:                     Saveriano
+Miles from downtown:                 50.0
+Ticket price:                  $     12.00
+----------------------------------------
+
+Train Ticket Estimate
+----------------------------------------
+Passenger:                     Cobos
+Miles from downtown:                 33.0
+Ticket price:                  $     12.00
+----------------------------------------
+
+Train Ticket Estimate
+----------------------------------------
+Passenger:                     Kelman
+Miles from downtown:                 45.0
+Ticket price:                  $     12.00
+----------------------------------------
+
+Train Ticket Estimate
+----------------------------------------
+Passenger:                     Kim
+Miles from downtown:                 20.0
+Ticket price:                  $     10.00
+----------------------------------------
+
+Train Ticket Estimate
+----------------------------------------
+Passenger:                     Anne
+Miles from downtown:                 15.0
+Ticket price:                  $      8.00
+----------------------------------------
+
+Summary of All Tickets
+----------------------------------------
+Total tickets sold:                     6
+Total ticket revenue:          $     66.00
+----------------------------------------
+
+Train Ticket Estimate
+----------------------------------------
+Passenger:                     Cobos
+Miles from downtown:                 33.0
+Ticket price:                  $     12.00
+----------------------------------------
